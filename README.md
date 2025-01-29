@@ -1,6 +1,8 @@
 **FedEx Package Delivery Kiosk Simulator**
 
-This Java-based package delivery kiosk simulator allows users to enter package details, choose a delivery method, and get a cost estimate. It uses JOptionPane for the interface instead of the console. The program applies object-oriented programming (OOP) principles to keep the design flexible and maintainable.
+This Java-based package delivery kiosk simulator allows users to enter package details, choose a delivery method, and get a cost estimate. It uses JOptionPane for the interface instead of the console. The program applies object-oriented programming (OOP) principles to keep the design flexible and maintainable. 
+
+A fair bit of humor is applied throughout the project, and a short easter egg is at the end. You can skip it by exiting [X] after "Process completed." Then again, _life moves pretty fast. If you don't stop and look around once in a while, you could miss it._
 
 
 
