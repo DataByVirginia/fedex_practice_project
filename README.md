@@ -8,17 +8,15 @@ __Project Overview__
 - Allows users to enter package details like ID, weight, and destination
 - Supports multiple delivery methods, including Ground, Air, Drone, and Pigeon
 - Calculates and displays the delivery cost based on the selected method
-- Handles courier details automatically in the background
-
 
 
 __OOP Principles in This Project__
 
-  **Encapsulation** ensures that critical data is kept private and only accessed through controlled methods. The weight of the package, for example, is private so it cannot be modified directly. Instead, a setter method checks that only valid numbers are assigned. This prevents errors like negative weights or non-numeric input.
+  **Encapsulation** ensures that critical data is kept private and only accessed through controlled methods. The weight of the package, for example, is private, so it cannot be modified directly. Instead, a setter method checks that only valid numbers are assigned. This prevents errors like negative weights or non-numeric input.
 
   **Inheritance** prevents repeating the same code for different delivery types. Instead of writing separate logic for each one, a parent class called Delivery is created, and GroundDelivery, AirDelivery, DroneDelivery, and PigeonDelivery inherit from it. Each delivery type only has to define its own cost formula, while the rest of the structure remains the same.
 
-  **Polymorphism** allows one variable to take on different forms. In this project, the delivery variable can represent different delivery types depending on user selection. This means the same method call works for all delivery types without needing separate if-else blocks in multiple places. If a new delivery method needs to be added, it can extend Delivery and work with the existing code without changing other parts of the program.
+  **Polymorphism** allows one variable to take on different forms. This project's delivery variable can represent different delivery types depending on user selection. This means the same method call works for all delivery types without needing separate if-else blocks in multiple places. If a new delivery method needs to be added, it can extend Delivery and work with the existing code without changing other program parts.
 
   **Abstraction** is used to simplify the design by making Delivery an abstract class. This means it provides a general structure but does not define the specific cost calculations. Those details are left to the individual delivery types. The user does not need to know how cost is calculated internally, only that they will receive a final price.
 
