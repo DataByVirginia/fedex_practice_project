@@ -1,6 +1,6 @@
-**FedEx Package Delivery Simulator**
+**FedEx Package Delivery Kiosk Simulator**
 
-This Java-based package delivery simulator allows users to enter package details, choose a delivery method, and get a cost estimate. It uses JOptionPane for the interface instead of the console. The program applies object-oriented programming (OOP) principles to keep the design flexible and maintainable.
+This Java-based package delivery kiosk simulator allows users to enter package details, choose a delivery method, and get a cost estimate. It uses JOptionPane for the interface instead of the console. The program applies object-oriented programming (OOP) principles to keep the design flexible and maintainable.
 
 
 
@@ -14,17 +14,17 @@ __OOP Principles in This Project__
 
   **Encapsulation** ensures that critical data is kept private and only accessed through controlled methods. The weight of the package, for example, is private, so it cannot be modified directly. Instead, a setter method checks that only valid numbers are assigned. This prevents errors like negative weights or non-numeric input.
 
-  **Inheritance** prevents repeating the same code for different delivery types. Instead of writing separate logic for each one, a parent class called Delivery is created, and GroundDelivery, AirDelivery, DroneDelivery, and PigeonDelivery inherit from it. Each delivery type only has to define its own cost formula, while the rest of the structure remains the same.
+  **Inheritance** prevents repeating the same code for different delivery types. Instead of writing separate logic for each one, a parent class called Delivery is created, and GroundDelivery, AirDelivery, DroneDelivery, and PigeonDelivery inherit from it. Each delivery type defines a distinct cost formula, while the rest of the structure remains the same.
 
-  **Polymorphism** allows one variable to take on different forms. This project's delivery variable can represent different delivery types depending on user selection. This means the same method call works for all delivery types without needing separate if-else blocks in multiple places. If a new delivery method needs to be added, it can extend Delivery and work with the existing code without changing other program parts.
+  **Polymorphism** allows one variable to take on different forms. Depending on user selection, this project's delivery variable can represent different delivery types. This means the same method call works for all delivery types without needing separate if-else blocks in multiple places. If a new delivery method needs to be added, it can extend Delivery and work with the existing code without changing other program parts.
 
-  **Abstraction** is used to simplify the design by making Delivery an abstract class. This means it provides a general structure but does not define the specific cost calculations. Those details are left to the individual delivery types. The user does not need to know how cost is calculated internally, only that they will receive a final price.
+  **Abstraction** simplifies the design by making Delivery an abstract class. This means it provides a general structure but does not define the specific cost calculations. The individual delivery types determine those details. The user does not need to know how costs are calculated internally; they only need to know that they will receive a final price.
 
 
 
 __How to Run the Project__
 - Clone the repository using git clone followed by the GitHub URL
-- Open the project in VS Code, IntelliJ, or Eclipse
+- Open the project in VS Code, IntelliJ, or Eclipse (ensure JOptionPane
 - Run MainClass.java
 
 
@@ -37,4 +37,4 @@ __Future Improvements__
 
 
 __Final Thoughts__
-This project is a simple but effective example of using encapsulation, inheritance, polymorphism, and abstraction in Java. The design allows for easy expansion while keeping the main logic clean.
+This project is a simple but effective example of using encapsulation, inheritance, polymorphism, and abstraction in Java. The design allows for easy expansion while keeping the main logic clean. Any and all advice is welcomed. 
