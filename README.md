@@ -31,6 +31,19 @@ __How to Run the Project__
 
 
 
+
+__Or here's a few video:__
+
+
+https://github.com/user-attachments/assets/2f5e90f8-9246-46f2-9932-951a3df944a7
+
+Reference:
+https://github.com/user-attachments/assets/6d332702-935a-4e3c-871b-1bda1625b818
+
+
+
+
+
 __Future Improvements__
 - Store delivery history in a database
 - Integrate a tracking API to simulate real-world shipping
